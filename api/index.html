@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>1. 电商管理后台 API 接口文档 | 电商后台系统api</title>
+    <meta name="description" content="shop-api">
+    <meta name="theme-color" content="#3eaf7c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/shop-admin-api/assets/css/0.styles.37e5ba03.css" as="style"><link rel="preload" href="/shop-admin-api/assets/js/app.7f50e92e.js" as="script"><link rel="preload" href="/shop-admin-api/assets/js/2.263da688.js" as="script"><link rel="preload" href="/shop-admin-api/assets/js/9.c3b3eea0.js" as="script"><link rel="prefetch" href="/shop-admin-api/assets/js/10.aa404897.js"><link rel="prefetch" href="/shop-admin-api/assets/js/11.e07399c2.js"><link rel="prefetch" href="/shop-admin-api/assets/js/3.1114eab2.js"><link rel="prefetch" href="/shop-admin-api/assets/js/4.ae4c34cf.js"><link rel="prefetch" href="/shop-admin-api/assets/js/5.aa8c77be.js"><link rel="prefetch" href="/shop-admin-api/assets/js/6.fb6963e5.js"><link rel="prefetch" href="/shop-admin-api/assets/js/7.3bc620e3.js"><link rel="prefetch" href="/shop-admin-api/assets/js/8.39dc4768.js">
+    <link rel="stylesheet" href="/shop-admin-api/assets/css/0.styles.37e5ba03.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/shop-admin-api/" class="home-link router-link-active"><!----> <span class="site-name">电商后台系统api</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/shop-admin-api/api/" class="nav-link router-link-exact-active router-link-active">接口详情</a></div><div class="nav-item"><a href="/shop-admin-api/project/" class="nav-link">系统演示</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/shop-admin-api/api/" class="nav-link router-link-exact-active router-link-active">接口详情</a></div><div class="nav-item"><a href="/shop-admin-api/project/" class="nav-link">系统演示</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>1. 电商管理后台 API 接口文档</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/shop-admin-api/api/#_1-1-api-v1-接口说明" class="sidebar-link">1.1. API V1 接口说明</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/shop-admin-api/api/#_1-1-1-支持的请求方法" class="sidebar-link">1.1.1. 支持的请求方法</a></li><li class="sidebar-sub-header"><a href="/shop-admin-api/api/#_1-1-2-通用返回状态说明" class="sidebar-link">1.1.2. 通用返回状态说明</a></li></ul></li><li><a href="/shop-admin-api/api/#_1-2-登录" class="sidebar-link">1.2. 登录</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/shop-admin-api/api/#_1-2-1-登录验证接口" class="sidebar-link">1.2.1. 登录验证接口</a></li></ul></li><li><a href="/shop-admin-api/api/#_1-3-用户管理" class="sidebar-link">1.3. 用户管理</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/shop-admin-api/api/#_1-3-1-用户数据列表" class="sidebar-link">1.3.1. 用户数据列表</a></li><li class="sidebar-sub-header"><a href="/shop-admin-api/api/#_1-3-2-添加用户" class="sidebar-link">1.3.2. 添加用户</a></li><li class="sidebar-sub-header"><a href="/shop-admin-api/api/#_1-3-3-修改用户状态" class="sidebar-link">1.3.3. 修改用户状态</a></li><li class="sidebar-sub-header"><a href="/shop-admin-api/api/#_1-3-4-根据-id-查询用户信息" class="sidebar-link">1.3.4. 根据 ID 查询用户信息</a></li><li class="sidebar-sub-header"><a href="/shop-admin-api/api/#_1-3-5-编辑用户提交" class="sidebar-link">1.3.5. 编辑用户提交</a></li><li class="sidebar-sub-header"><a href="/shop-admin-api/api/#_1-3-6-删除单个用户" class="sidebar-link">1.3.6. 删除单个用户</a></li><li class="sidebar-sub-header"><a href="/shop-admin-api/api/#_1-3-7-分配用户角色" class="sidebar-link">1.3.7. 分配用户角色</a></li></ul></li><li><a href="/shop-admin-api/api/#_1-4-权限管理" class="sidebar-link">1.4. 权限管理</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/shop-admin-api/api/#_1-4-1-所有权限列表" class="sidebar-link">1.4.1. 所有权限列表</a></li><li class="sidebar-sub-header"><a href="/shop-admin-api/api/#_1-4-2-左侧菜单权限" class="sidebar-link">1.4.2. 左侧菜单权限</a></li></ul></li><li><a href="/shop-admin-api/api/#_1-5-角色管理" class="sidebar-link">1.5. 角色管理</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/shop-admin-api/api/#_1-5-1-角色列表" class="sidebar-link">1.5.1. 角色列表</a></li><li class="sidebar-sub-header"><a href="/shop-admin-api/api/#_1-5-2-添加角色" class="sidebar-link">1.5.2. 添加角色</a></li><li class="sidebar-sub-header"><a href="/shop-admin-api/api/#_1-5-3-根据-id-查询角色" class="sidebar-link">1.5.3. 根据 ID 查询角色</a></li><li class="sidebar-sub-header"><a href="/shop-admin-api/api/#_1-5-4-编辑提交角色" class="sidebar-link">1.5.4. 编辑提交角色</a></li><li class="sidebar-sub-header"><a href="/shop-admin-api/api/#_1-5-5-删除角色" class="sidebar-link">1.5.5. 删除角色</a></li><li class="sidebar-sub-header"><a href="/shop-admin-api/api/#_1-5-6-角色授权" class="sidebar-link">1.5.6. 角色授权</a></li><li class="sidebar-sub-header"><a href="/shop-admin-api/api/#_1-5-7-删除角色指定权限" class="sidebar-link">1.5.7. 删除角色指定权限</a></li></ul></li><li><a href="/shop-admin-api/api/#_1-6-商品分类管理" class="sidebar-link">1.6. 商品分类管理</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/shop-admin-api/api/#_1-6-1-商品分类数据列表" class="sidebar-link">1.6.1. 商品分类数据列表</a></li><li class="sidebar-sub-header"><a href="/shop-admin-api/api/#_1-6-2-添加分类" class="sidebar-link">1.6.2. 添加分类</a></li><li class="sidebar-sub-header"><a href="/shop-admin-api/api/#_1-6-3-根据-id-查询分类" class="sidebar-link">1.6.3. 根据 id 查询分类</a></li><li class="sidebar-sub-header"><a href="/shop-admin-api/api/#_1-6-4-编辑提交分类" class="sidebar-link">1.6.4. 编辑提交分类</a></li><li class="sidebar-sub-header"><a href="/shop-admin-api/api/#_1-6-5-删除分类" class="sidebar-link">1.6.5. 删除分类</a></li></ul></li><li><a href="/shop-admin-api/api/#_1-7-分类参数管理" class="sidebar-link">1.7. 分类参数管理</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/shop-admin-api/api/#_1-7-1-参数列表" class="sidebar-link">1.7.1. 参数列表</a></li><li class="sidebar-sub-header"><a href="/shop-admin-api/api/#_1-7-2-添加动态参数或者静态属性" class="sidebar-link">1.7.2. 添加动态参数或者静态属性</a></li><li class="sidebar-sub-header"><a href="/shop-admin-api/api/#_1-7-3-删除参数" class="sidebar-link">1.7.3. 删除参数</a></li><li class="sidebar-sub-header"><a href="/shop-admin-api/api/#_1-7-4-根据-id-查询参数" class="sidebar-link">1.7.4. 根据 ID 查询参数</a></li><li class="sidebar-sub-header"><a href="/shop-admin-api/api/#_1-7-5-编辑提交参数" class="sidebar-link">1.7.5. 编辑提交参数</a></li></ul></li><li><a href="/shop-admin-api/api/#_1-8-商品管理" class="sidebar-link">1.8. 商品管理</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/shop-admin-api/api/#_1-8-1-商品列表数据" class="sidebar-link">1.8.1. 商品列表数据</a></li><li class="sidebar-sub-header"><a href="/shop-admin-api/api/#_1-8-2-添加商品" class="sidebar-link">1.8.2. 添加商品</a></li><li class="sidebar-sub-header"><a href="/shop-admin-api/api/#_1-8-3-根据-id-查询商品" class="sidebar-link">1.8.3. 根据 ID 查询商品</a></li><li class="sidebar-sub-header"><a href="/shop-admin-api/api/#_1-8-4-编辑提交商品-只做效果-不提交接口" class="sidebar-link">1.8.4. 编辑提交商品(只做效果,不提交接口)</a></li><li class="sidebar-sub-header"><a href="/shop-admin-api/api/#_1-8-5-删除商品" class="sidebar-link">1.8.5. 删除商品</a></li></ul></li><li><a href="/shop-admin-api/api/#_1-9-图片上传" class="sidebar-link">1.9. 图片上传</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/shop-admin-api/api/#_1-10-订单管理" class="sidebar-link">1.10. 订单管理</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/shop-admin-api/api/#_1-10-1-订单数据列表" class="sidebar-link">1.10.1. 订单数据列表</a></li><li class="sidebar-sub-header"><a href="/shop-admin-api/api/#_1-10-2-修改订单状态" class="sidebar-link">1.10.2. 修改订单状态</a></li><li class="sidebar-sub-header"><a href="/shop-admin-api/api/#_1-10-3-查看订单详情" class="sidebar-link">1.10.3. 查看订单详情</a></li><li class="sidebar-sub-header"><a href="/shop-admin-api/api/#_1-10-4-修改地址" class="sidebar-link">1.10.4. 修改地址</a></li><li class="sidebar-sub-header"><a href="/shop-admin-api/api/#_1-10-5-查看物流信息" class="sidebar-link">1.10.5. 查看物流信息</a></li></ul></li><li><a href="/shop-admin-api/api/#_1-11-数据统计" class="sidebar-link">1.11. 数据统计</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/shop-admin-api/api/#_1-11-1-基于时间统计的折线图" class="sidebar-link">1.11.1.  基于时间统计的折线图</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="_1-电商管理后台-api-接口文档"><a href="#_1-电商管理后台-api-接口文档" class="header-anchor">#</a> 1. 电商管理后台 API 接口文档</h1> <h2 id="_1-1-api-v1-接口说明"><a href="#_1-1-api-v1-接口说明" class="header-anchor">#</a> 1.1. API V1 接口说明</h2> <ul><li>接口基准地址：<code>http://49.233.66.125:8888/api/private/v1/</code></li> <li>服务端已开启 CORS 跨域支持</li> <li>API V1 认证统一使用 Token 认证</li> <li>需要授权的 API ，必须在请求头中使用 <code>Authorization</code> 字段提供 <code>token</code> 令牌</li> <li>使用 HTTP Status Code 标识状态</li> <li>数据返回格式统一使用 JSON</li></ul> <h3 id="_1-1-1-支持的请求方法"><a href="#_1-1-1-支持的请求方法" class="header-anchor">#</a> 1.1.1. 支持的请求方法</h3> <ul><li>GET（SELECT）：从服务器取出资源（一项或多项）。</li> <li>POST（CREATE）：在服务器新建一个资源。</li> <li>PUT（UPDATE）：在服务器更新资源（客户端提供改变后的完整资源）。</li> <li>PATCH（UPDATE）：在服务器更新资源（客户端提供改变的属性）。</li> <li>DELETE（DELETE）：从服务器删除资源。</li> <li>HEAD：获取资源的元数据。</li> <li>OPTIONS：获取信息，关于资源的哪些属性是客户端可以改变的。</li></ul> <h3 id="_1-1-2-通用返回状态说明"><a href="#_1-1-2-通用返回状态说明" class="header-anchor">#</a> 1.1.2. 通用返回状态说明</h3> <table><thead><tr><th><em>状态码</em></th> <th><em>含义</em></th> <th><em>说明</em></th></tr></thead> <tbody><tr><td>200</td> <td>OK</td> <td>请求成功</td></tr> <tr><td>201</td> <td>CREATED</td> <td>创建成功</td></tr> <tr><td>204</td> <td>DELETED</td> <td>删除成功</td></tr> <tr><td>400</td> <td>BAD REQUEST</td> <td>请求的地址不存在或者包含不支持的参数</td></tr> <tr><td>401</td> <td>UNAUTHORIZED</td> <td>未授权</td></tr> <tr><td>403</td> <td>FORBIDDEN</td> <td>被禁止访问</td></tr> <tr><td>404</td> <td>NOT FOUND</td> <td>请求的资源不存在</td></tr> <tr><td>422</td> <td>Unprocesable entity</td> <td>[POST/PUT/PATCH] 当创建一个对象时，发生一个验证错误</td></tr> <tr><td>500</td> <td>INTERNAL SERVER ERROR</td> <td>内部错误</td></tr> <tr><td></td> <td></td> <td></td></tr></tbody></table> <hr> <h2 id="_1-2-登录"><a href="#_1-2-登录" class="header-anchor">#</a> 1.2. 登录</h2> <h3 id="_1-2-1-登录验证接口"><a href="#_1-2-1-登录验证接口" class="header-anchor">#</a> 1.2.1. 登录验证接口</h3> <ul><li>请求路径：login</li> <li>请求方法：post</li> <li>请求参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>username</td> <td>用户名</td> <td>不能为空</td></tr> <tr><td>password</td> <td>密码</td> <td>不能为空</td></tr></tbody></table> <ul><li>响应参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>id</td> <td>用户 ID</td> <td></td></tr> <tr><td>rid</td> <td>用户角色 ID</td> <td></td></tr> <tr><td>username</td> <td>用户名</td> <td></td></tr> <tr><td>mobile</td> <td>手机号</td> <td></td></tr> <tr><td>email</td> <td>邮箱</td> <td></td></tr> <tr><td>token</td> <td>令牌</td> <td>基于 jwt 的令牌</td></tr></tbody></table> <ul><li>响应数据</li></ul> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">500</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;rid&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;username&quot;</span><span class="token operator">:</span> <span class="token string">&quot;admin&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;mobile&quot;</span><span class="token operator">:</span> <span class="token string">&quot;123&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;email&quot;</span><span class="token operator">:</span> <span class="token string">&quot;123@qq.com&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;token&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjUwMCwicmlkIjowLCJpYXQiOjE1MTI1NDQyOTksImV4cCI6MTUxMjYzMDY5OX0.eGrsrvwHm-tPsO9r_pxHIQ5i5L1kX9RX444uwnRGaIM&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;meta&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;登录成功&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;status&quot;</span><span class="token operator">:</span> <span class="token number">200</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_1-3-用户管理"><a href="#_1-3-用户管理" class="header-anchor">#</a> 1.3. 用户管理</h2> <h3 id="_1-3-1-用户数据列表"><a href="#_1-3-1-用户数据列表" class="header-anchor">#</a> 1.3.1. 用户数据列表</h3> <ul><li>请求路径：users</li> <li>请求方法：get</li> <li>请求参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>query</td> <td>查询参数</td> <td>可以为空</td></tr> <tr><td>pagenum</td> <td>当前页码</td> <td>不能为空</td></tr> <tr><td>pagesize</td> <td>每页显示条数</td> <td>不能为空</td></tr></tbody></table> <ul><li>响应参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>totalpage</td> <td>总记录数</td> <td></td></tr> <tr><td>pagenum</td> <td>当前页码</td> <td></td></tr> <tr><td>users</td> <td>用户数据集合</td> <td></td></tr></tbody></table> <ul><li>响应数据</li></ul> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;totalpage&quot;</span><span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;pagenum&quot;</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;users&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+                <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">25</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;username&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tige117&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;mobile&quot;</span><span class="token operator">:</span> <span class="token string">&quot;18616358651&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;email&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tige112@163.com&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;create_time&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2017-11-09T20:36:26.000Z&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;mg_state&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 当前用户的状态</span>
+                <span class="token property">&quot;role_name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;炒鸡管理员&quot;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;meta&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;获取成功&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;status&quot;</span><span class="token operator">:</span> <span class="token number">200</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_1-3-2-添加用户"><a href="#_1-3-2-添加用户" class="header-anchor">#</a> 1.3.2. 添加用户</h3> <ul><li>请求路径：users</li> <li>请求方法：post</li> <li>请求参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>username</td> <td>用户名称</td> <td>不能为空</td></tr> <tr><td>password</td> <td>用户密码</td> <td>不能为空</td></tr> <tr><td>email</td> <td>邮箱</td> <td>可以为空</td></tr> <tr><td>mobile</td> <td>手机号</td> <td>可以为空</td></tr></tbody></table> <ul><li>响应参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>id</td> <td>用户 ID</td> <td></td></tr> <tr><td>rid</td> <td>用户角色 ID</td> <td></td></tr> <tr><td>username</td> <td>用户名</td> <td></td></tr> <tr><td>mobile</td> <td>手机号</td> <td></td></tr> <tr><td>email</td> <td>邮箱</td> <td></td></tr></tbody></table> <ul><li>响应数据</li></ul> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">28</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;username&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tige1200&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;mobile&quot;</span><span class="token operator">:</span> <span class="token string">&quot;test&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;openid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;email&quot;</span><span class="token operator">:</span> <span class="token string">&quot;test@test.com&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;create_time&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2017-11-10T03:47:13.533Z&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;modify_time&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;is_delete&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;is_active&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;meta&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;用户创建成功&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;status&quot;</span><span class="token operator">:</span> <span class="token number">201</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_1-3-3-修改用户状态"><a href="#_1-3-3-修改用户状态" class="header-anchor">#</a> 1.3.3. 修改用户状态</h3> <ul><li>请求路径：users/:uId/state/:type</li> <li>请求方法：put</li> <li>请求参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>uId</td> <td>用户 ID</td> <td>不能为空<code>携带在url中</code></td></tr> <tr><td>type</td> <td>用户状态</td> <td>不能为空<code>携带在url中</code>，值为 true 或者 false</td></tr></tbody></table> <ul><li>响应数据</li></ul> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">566</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;rid&quot;</span><span class="token operator">:</span> <span class="token number">30</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;username&quot;</span><span class="token operator">:</span> <span class="token string">&quot;admin&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;mobile&quot;</span><span class="token operator">:</span> <span class="token string">&quot;123456&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;email&quot;</span><span class="token operator">:</span> <span class="token string">&quot;bb@itcast.com&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;mg_state&quot;</span><span class="token operator">:</span> <span class="token number">0</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;meta&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;设置状态成功&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;status&quot;</span><span class="token operator">:</span> <span class="token number">200</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_1-3-4-根据-id-查询用户信息"><a href="#_1-3-4-根据-id-查询用户信息" class="header-anchor">#</a> 1.3.4. 根据 ID 查询用户信息</h3> <ul><li>请求路径：users/:id</li> <li>请求方法：get</li> <li>请求参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>id</td> <td>用户 ID</td> <td>不能为空<code>携带在url中</code></td></tr></tbody></table> <ul><li>响应参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>id</td> <td>用户 ID</td> <td></td></tr> <tr><td>role_id</td> <td>角色 ID</td> <td></td></tr> <tr><td>mobile</td> <td>手机号</td> <td></td></tr> <tr><td>email</td> <td>邮箱</td> <td></td></tr></tbody></table> <ul><li>响应数据</li></ul> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">503</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;username&quot;</span><span class="token operator">:</span> <span class="token string">&quot;admin3&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;role_id&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;mobile&quot;</span><span class="token operator">:</span> <span class="token string">&quot;00000&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;email&quot;</span><span class="token operator">:</span> <span class="token string">&quot;new@new.com&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;meta&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;查询成功&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;status&quot;</span><span class="token operator">:</span> <span class="token number">200</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_1-3-5-编辑用户提交"><a href="#_1-3-5-编辑用户提交" class="header-anchor">#</a> 1.3.5. 编辑用户提交</h3> <ul><li>请求路径：users/:id</li> <li>请求方法：put</li> <li>请求参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>id</td> <td>用户 id</td> <td>不能为空 <code>参数是url参数:id</code></td></tr> <tr><td>email</td> <td>邮箱</td> <td>可以为空</td></tr> <tr><td>mobile</td> <td>手机号</td> <td>可以为空</td></tr></tbody></table> <ul><li>响应参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>id</td> <td>用户 ID</td> <td></td></tr> <tr><td>role_id</td> <td>角色 ID</td> <td></td></tr> <tr><td>mobile</td> <td>手机号</td> <td></td></tr> <tr><td>email</td> <td>邮箱</td> <td></td></tr></tbody></table> <ul><li>响应数据</li></ul> <div class="language-json extra-class"><pre class="language-json"><code><span class="token comment">/* 200表示成功，500表示失败 */</span>
+<span class="token punctuation">{</span>
+    <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">503</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;username&quot;</span><span class="token operator">:</span> <span class="token string">&quot;admin3&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;role_id&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;mobile&quot;</span><span class="token operator">:</span> <span class="token string">&quot;111&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;email&quot;</span><span class="token operator">:</span> <span class="token string">&quot;123@123.com&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;meta&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;更新成功&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;status&quot;</span><span class="token operator">:</span> <span class="token number">200</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_1-3-6-删除单个用户"><a href="#_1-3-6-删除单个用户" class="header-anchor">#</a> 1.3.6. 删除单个用户</h3> <ul><li>请求路径：users/:id</li> <li>请求方法：delete</li> <li>请求参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>id</td> <td>用户 id</td> <td>不能为空<code>参数是url参数:id</code></td></tr></tbody></table> <ul><li>响应参数</li> <li>响应数据</li></ul> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;meta&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;删除成功&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;status&quot;</span><span class="token operator">:</span> <span class="token number">200</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_1-3-7-分配用户角色"><a href="#_1-3-7-分配用户角色" class="header-anchor">#</a> 1.3.7. 分配用户角色</h3> <ul><li>请求路径：users/:id/role</li> <li>请求方法：put</li> <li>请求参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>id</td> <td>用户 ID</td> <td>不能为空<code>参数是url参数:id</code></td></tr> <tr><td>rid</td> <td>角色 id</td> <td>不能为空<code>参数body参数</code></td></tr></tbody></table> <ul><li>响应参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>id</td> <td>用户 ID</td> <td></td></tr> <tr><td>role_id</td> <td>角色 ID</td> <td></td></tr> <tr><td>mobile</td> <td>手机号</td> <td></td></tr> <tr><td>email</td> <td>邮箱</td> <td></td></tr></tbody></table> <ul><li>响应数据</li></ul> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">508</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;rid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;30&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;username&quot;</span><span class="token operator">:</span> <span class="token string">&quot;asdf1&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;mobile&quot;</span><span class="token operator">:</span> <span class="token string">&quot;123123&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;email&quot;</span><span class="token operator">:</span> <span class="token string">&quot;adfsa@qq.com&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;meta&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;设置角色成功&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;status&quot;</span><span class="token operator">:</span> <span class="token number">200</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_1-4-权限管理"><a href="#_1-4-权限管理" class="header-anchor">#</a> 1.4. 权限管理</h2> <h3 id="_1-4-1-所有权限列表"><a href="#_1-4-1-所有权限列表" class="header-anchor">#</a> 1.4.1. 所有权限列表</h3> <ul><li>请求路径：rights/:type</li> <li>请求方法：get</li> <li>请求参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>type</td> <td>类型</td> <td>值 list 或 tree , list 列表显示权限, tree 树状显示权限,<code>参数是url参数:type</code></td></tr></tbody></table> <ul><li>响应参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>id</td> <td>权限 ID</td> <td></td></tr> <tr><td>authName</td> <td>权限说明</td> <td></td></tr> <tr><td>level</td> <td>权限层级</td> <td></td></tr> <tr><td>pid</td> <td>权限父 ID</td> <td></td></tr> <tr><td>path</td> <td>对应访问路径</td> <td></td></tr></tbody></table> <ul><li>响应数据 type=list</li></ul> <div class="language-json extra-class"><pre class="language-json"><code>  <span class="token punctuation">{</span>
+    <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">101</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;authName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;商品管理&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;level&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;pid&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;path&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">102</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;authName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;订单管理&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;level&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;pid&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;path&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;meta&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;获取权限列表成功&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;status&quot;</span><span class="token operator">:</span> <span class="token number">200</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>type=tree</p> <div class="language-json extra-class"><pre class="language-json"><code>  <span class="token punctuation">{</span>
+    data<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        id<span class="token operator">:</span> <span class="token number">101</span><span class="token punctuation">,</span>
+        authName<span class="token operator">:</span> '商品管理'<span class="token punctuation">,</span>
+        path<span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+        pid<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        children<span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            id<span class="token operator">:</span> <span class="token number">104</span><span class="token punctuation">,</span>
+            authName<span class="token operator">:</span> '商品列表'<span class="token punctuation">,</span>
+            path<span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+            pid<span class="token operator">:</span> <span class="token number">101</span><span class="token punctuation">,</span>
+            children<span class="token operator">:</span> <span class="token punctuation">[</span>
+              <span class="token punctuation">{</span>
+                id<span class="token operator">:</span> <span class="token number">105</span><span class="token punctuation">,</span>
+                authName<span class="token operator">:</span> '添加商品'<span class="token punctuation">,</span>
+                path<span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+                pid<span class="token operator">:</span> '<span class="token number">104</span><span class="token punctuation">,</span><span class="token number">101</span>'
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    meta<span class="token operator">:</span> <span class="token punctuation">{</span>
+      msg<span class="token operator">:</span> '获取权限列表成功'<span class="token punctuation">,</span>
+      status<span class="token operator">:</span> <span class="token number">200</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><h3 id="_1-4-2-左侧菜单权限"><a href="#_1-4-2-左侧菜单权限" class="header-anchor">#</a> 1.4.2. 左侧菜单权限</h3> <ul><li>请求路径：menus</li> <li>请求方法：get</li> <li>响应数据</li></ul> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;data&quot;</span><span class="token operator">:</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">101</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;authName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;商品管理&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;path&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;children&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">104</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;authName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;商品列表&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;path&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;children&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+    <span class="token property">&quot;meta&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;获取菜单列表成功&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;status&quot;</span><span class="token operator">:</span> <span class="token number">200</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_1-5-角色管理"><a href="#_1-5-角色管理" class="header-anchor">#</a> 1.5. 角色管理</h2> <h3 id="_1-5-1-角色列表"><a href="#_1-5-1-角色列表" class="header-anchor">#</a> 1.5.1. 角色列表</h3> <ul><li><p>请求路径：roles</p></li> <li><p>请求方法：get</p></li> <li><p>响应数据说明</p> <ul><li>第一层为角色信息</li></ul> <ul><li>第二层开始为权限说明，权限一共有 3 层权限</li> <li>最后一层权限，不包含 <code>children</code> 属性</li></ul></li> <li><p>响应数据</p></li></ul> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">30</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;roleName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;主管&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;roleDesc&quot;</span><span class="token operator">:</span> <span class="token string">&quot;技术负责人&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;children&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">101</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;authName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;商品管理&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;path&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;children&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">{</span>
+                            <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">104</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;authName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;商品列表&quot;</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;path&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;children&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                                <span class="token punctuation">{</span>
+                                    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">105</span><span class="token punctuation">,</span>
+                                    <span class="token property">&quot;authName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;添加商品&quot;</span><span class="token punctuation">,</span>
+                                    <span class="token property">&quot;path&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span>
+                                <span class="token punctuation">}</span>
+                            <span class="token punctuation">]</span>
+                        <span class="token punctuation">}</span>
+                    <span class="token punctuation">]</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;meta&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;获取成功&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;status&quot;</span><span class="token operator">:</span> <span class="token number">200</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_1-5-2-添加角色"><a href="#_1-5-2-添加角色" class="header-anchor">#</a> 1.5.2. 添加角色</h3> <ul><li>请求路径：roles</li> <li>请求方法：post</li> <li>请求参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>roleName</td> <td>角色名称</td> <td>不能为空</td></tr> <tr><td>roleDesc</td> <td>角色描述</td> <td>可以为空</td></tr></tbody></table> <ul><li>响应参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>roleId</td> <td>角色 ID</td> <td></td></tr> <tr><td>roleName</td> <td>角色名称</td> <td></td></tr> <tr><td>roleDesc</td> <td>角色描述</td> <td></td></tr></tbody></table> <ul><li>响应数据</li></ul> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;roleId&quot;</span><span class="token operator">:</span> <span class="token number">40</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;roleName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;admin2&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;roleDesc&quot;</span><span class="token operator">:</span> <span class="token string">&quot;admin2Desc&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;meta&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;创建成功&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;status&quot;</span><span class="token operator">:</span> <span class="token number">201</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_1-5-3-根据-id-查询角色"><a href="#_1-5-3-根据-id-查询角色" class="header-anchor">#</a> 1.5.3. 根据 ID 查询角色</h3> <ul><li>请求路径：roles/:id</li> <li>请求方法：get</li> <li>请求参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>:id</td> <td>角色 ID</td> <td>不能为空<code>携带在url中</code></td></tr></tbody></table> <ul><li>响应参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>roleId</td> <td>角色 ID</td> <td></td></tr> <tr><td>roleName</td> <td>角色名称</td> <td></td></tr> <tr><td>roleDesc</td> <td>角色描述</td> <td></td></tr></tbody></table> <ul><li>响应数据</li></ul> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;roleId&quot;</span><span class="token operator">:</span> <span class="token number">31</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;roleName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;测试角色&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;roleDesc&quot;</span><span class="token operator">:</span> <span class="token string">&quot;测试负责人&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;meta&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;获取成功&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;status&quot;</span><span class="token operator">:</span> <span class="token number">200</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_1-5-4-编辑提交角色"><a href="#_1-5-4-编辑提交角色" class="header-anchor">#</a> 1.5.4. 编辑提交角色</h3> <ul><li>请求路径：roles/:id</li> <li>请求方法：put</li> <li>请求参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>:id</td> <td>角色 ID</td> <td>不能为空<code>携带在url中</code></td></tr> <tr><td>roleName</td> <td>角色名称</td> <td>不能为空</td></tr> <tr><td>roleDesc</td> <td>角色描述</td> <td>可以为空</td></tr></tbody></table> <ul><li>响应数据</li></ul> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;roleId&quot;</span><span class="token operator">:</span> <span class="token number">31</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;roleName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;测试角色&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;roleDesc&quot;</span><span class="token operator">:</span> <span class="token string">&quot;测试角色描述&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;meta&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;获取成功&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;status&quot;</span><span class="token operator">:</span> <span class="token number">200</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_1-5-5-删除角色"><a href="#_1-5-5-删除角色" class="header-anchor">#</a> 1.5.5. 删除角色</h3> <ul><li>请求路径：roles/:id</li> <li>请求方法：delete</li> <li>请求参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>:id</td> <td>角色 ID</td> <td>不能为空<code>携带在url中</code></td></tr></tbody></table> <ul><li>响应数据</li></ul> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;meta&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;删除成功&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;status&quot;</span><span class="token operator">:</span> <span class="token number">200</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_1-5-6-角色授权"><a href="#_1-5-6-角色授权" class="header-anchor">#</a> 1.5.6. 角色授权</h3> <ul><li>请求路径：roles/:roleId/rights</li> <li>请求方法：post</li> <li>请求参数：通过 <code>请求体</code> 发送给后端</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>:roleId</td> <td>角色 ID</td> <td>不能为空<code>携带在url中</code></td></tr> <tr><td>rids</td> <td>权限 ID 列表（字符串）</td> <td>以 <code>,</code> 分割的权限 ID 列表（获取所有被选中、叶子节点的key和半选中节点的key, 包括 1，2，3级节点）</td></tr></tbody></table> <ul><li>响应数据</li></ul> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;meta&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;更新成功&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;status&quot;</span><span class="token operator">:</span> <span class="token number">200</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_1-5-7-删除角色指定权限"><a href="#_1-5-7-删除角色指定权限" class="header-anchor">#</a> 1.5.7. 删除角色指定权限</h3> <ul><li><p>请求路径：roles/:roleId/rights/:rightId</p></li> <li><p>请求方法：delete</p></li> <li><p>请求参数</p> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>:roleId</td> <td>角色 ID</td> <td>不能为空<code>携带在url中</code></td></tr> <tr><td>:rightId</td> <td>权限 ID</td> <td>不能为空<code>携带在url中</code></td></tr></tbody></table></li> <li><p>响应数据说明</p> <ul><li>返回的data, 是当前角色下最新的权限数据</li></ul></li> <li><p>响应数据</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">101</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;authName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;商品管理&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;path&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;children&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">104</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;authName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;商品列表&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;path&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;children&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">{</span>
+                            <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">105</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;authName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;添加商品&quot;</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;path&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span>
+                        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">{</span>
+                            <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">116</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;authName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;修改&quot;</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;path&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span>
+                        <span class="token punctuation">}</span>
+                    <span class="token punctuation">]</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;meta&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;取消权限成功&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;status&quot;</span><span class="token operator">:</span> <span class="token number">200</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></li></ul> <h2 id="_1-6-商品分类管理"><a href="#_1-6-商品分类管理" class="header-anchor">#</a> 1.6. 商品分类管理</h2> <h3 id="_1-6-1-商品分类数据列表"><a href="#_1-6-1-商品分类数据列表" class="header-anchor">#</a> 1.6.1. 商品分类数据列表</h3> <ul><li>请求路径：categories</li> <li>请求方法：get</li> <li>请求参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>type</td> <td>[1,2,3]</td> <td>值：1，2，3 分别表示显示一层二层三层分类列表<br>【可选参数】如果不传递，则默认获取所有级别的分类</td></tr> <tr><td>pagenum</td> <td>当前页码值</td> <td>【可选参数】如果不传递，则默认获取所有分类</td></tr> <tr><td>pagesize</td> <td>每页显示多少条数据</td> <td>【可选参数】如果不传递，则默认获取所有分类</td></tr></tbody></table> <ul><li>响应参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>cat_id</td> <td>分类 ID</td> <td></td></tr> <tr><td>cat_name</td> <td>分类名称</td> <td></td></tr> <tr><td>cat_pid</td> <td>分类父 ID</td> <td></td></tr> <tr><td>cat_level</td> <td>分类当前层级</td> <td></td></tr></tbody></table> <ul><li>响应数据</li></ul> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;cat_id&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;cat_name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;大家电&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;cat_pid&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;cat_level&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;cat_deleted&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;children&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;cat_id&quot;</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;cat_name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;电视&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;cat_pid&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;cat_level&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;cat_deleted&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;children&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">{</span>
+                            <span class="token property">&quot;cat_id&quot;</span><span class="token operator">:</span> <span class="token number">6</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;cat_name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;曲面电视&quot;</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;cat_pid&quot;</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;cat_level&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;cat_deleted&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span>
+                        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">{</span>
+                            <span class="token property">&quot;cat_id&quot;</span><span class="token operator">:</span> <span class="token number">7</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;cat_name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;海信&quot;</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;cat_pid&quot;</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;cat_level&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;cat_deleted&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span>
+                        <span class="token punctuation">}</span>
+                    <span class="token punctuation">]</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;meta&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;获取成功&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;status&quot;</span><span class="token operator">:</span> <span class="token number">200</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_1-6-2-添加分类"><a href="#_1-6-2-添加分类" class="header-anchor">#</a> 1.6.2. 添加分类</h3> <ul><li>请求路径：categories</li> <li>请求方法：post</li> <li>请求参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>cat_pid</td> <td>分类父 ID</td> <td>不能为空，如果要添加1级分类，则父分类Id应该设置为  <code>0</code></td></tr> <tr><td>cat_name</td> <td>分类名称</td> <td>不能为空</td></tr> <tr><td>cat_level</td> <td>分类层级</td> <td>不能为空，<code>0</code>表示一级分类；<code>1</code>表示二级分类；<code>2</code>表示三级分类</td></tr></tbody></table> <ul><li>响应数据</li></ul> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;cat_id&quot;</span><span class="token operator">:</span> <span class="token number">62</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cat_name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;相框&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cat_pid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cat_level&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;meta&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;创建成功&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;status&quot;</span><span class="token operator">:</span> <span class="token number">201</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_1-6-3-根据-id-查询分类"><a href="#_1-6-3-根据-id-查询分类" class="header-anchor">#</a> 1.6.3. 根据 id 查询分类</h3> <ul><li>请求路径：categories/:id</li> <li>请求方法：get</li> <li>请求参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>:id</td> <td>分类 ID</td> <td>不能为空<code>携带在url中</code></td></tr></tbody></table> <ul><li>响应数据</li></ul> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;data&quot;: {
+        &quot;cat_id&quot;: 3,
+        &quot;cat_name&quot;: &quot;厨卫电器&quot;,
+        &quot;cat_pid&quot;: 0,
+        &quot;cat_level&quot;: 0
+    },
+    &quot;meta&quot;: {
+        &quot;msg&quot;: &quot;获取成功&quot;,
+        &quot;status&quot;: 200
+    }
+}
+</code></pre></div><h3 id="_1-6-4-编辑提交分类"><a href="#_1-6-4-编辑提交分类" class="header-anchor">#</a> 1.6.4. 编辑提交分类</h3> <ul><li>请求路径：categories/:id</li> <li>请求方法：put</li> <li>请求参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>:id</td> <td>分类 ID</td> <td>不能为空<code>携带在url中</code></td></tr> <tr><td>cat_name</td> <td>分类名称</td> <td>不能为空【此参数，放到请求体中】</td></tr></tbody></table> <ul><li>响应数据</li></ul> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;data&quot;: {
+        &quot;cat_id&quot;: 22,
+        &quot;cat_name&quot;: &quot;自拍杆&quot;,
+        &quot;cat_pid&quot;: 7,
+        &quot;cat_level&quot;: 2
+    },
+    &quot;meta&quot;: {
+        &quot;msg&quot;: &quot;更新成功&quot;,
+        &quot;status&quot;: 200
+    }
+}
+</code></pre></div><h3 id="_1-6-5-删除分类"><a href="#_1-6-5-删除分类" class="header-anchor">#</a> 1.6.5. 删除分类</h3> <ul><li>请求路径：categories/:id</li> <li>请求方法：delete</li> <li>请求参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>:id</td> <td>分类 ID</td> <td>不能为空<code>携带在url中</code></td></tr></tbody></table> <ul><li>响应数据</li></ul> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;data&quot;: null,
+    &quot;meta&quot;: {
+        &quot;msg&quot;: &quot;删除成功&quot;,
+        &quot;status&quot;: 200
+    }
+}
+</code></pre></div><h2 id="_1-7-分类参数管理"><a href="#_1-7-分类参数管理" class="header-anchor">#</a> 1.7. 分类参数管理</h2> <h3 id="_1-7-1-参数列表"><a href="#_1-7-1-参数列表" class="header-anchor">#</a> 1.7.1. 参数列表</h3> <ul><li>请求路径：categories/:id/attributes</li> <li>请求方法：get</li> <li>请求参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>:id</td> <td>分类 ID</td> <td>不能为空<code>携带在url中</code></td></tr> <tr><td>sel</td> <td>[only,many]</td> <td>不能为空,通过 only 或 many 来获取分类静态参数还是动态参数</td></tr></tbody></table> <ul><li>响应参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>attr_id</td> <td>分类参数 ID</td> <td></td></tr> <tr><td>attr_name</td> <td>分类参数名称</td> <td></td></tr> <tr><td>cat_id</td> <td>分类参数所属分类</td> <td></td></tr> <tr><td>attr_sel</td> <td>only:输入框(唯一) many:后台下拉列表/前台单选框</td> <td></td></tr> <tr><td>attr_write</td> <td>manual:手工录入 list:从列表选择</td> <td></td></tr> <tr><td>attr_vals</td> <td>如果 attr_write:list,那么有值，该值以逗号分隔</td> <td></td></tr></tbody></table> <ul><li>响应数据</li></ul> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;data&quot;: [
+        {
+            &quot;attr_id&quot;: 1,
+            &quot;attr_name&quot;: &quot;cpu&quot;,
+            &quot;cat_id&quot;: 22,
+            &quot;attr_sel&quot;: &quot;only&quot;,
+            &quot;attr_write&quot;: &quot;manual&quot;,
+            &quot;attr_vals&quot;: &quot;ffff&quot;
+        }
+    ],
+    &quot;meta&quot;: {
+        &quot;msg&quot;: &quot;获取成功&quot;,
+        &quot;status&quot;: 200
+    }
+}
+</code></pre></div><h3 id="_1-7-2-添加动态参数或者静态属性"><a href="#_1-7-2-添加动态参数或者静态属性" class="header-anchor">#</a> 1.7.2. 添加动态参数或者静态属性</h3> <ul><li>请求路径：categories/:id/attributes</li> <li>请求方法：post</li> <li>请求参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>:id</td> <td>分类 ID</td> <td>不能为空<code>携带在url中</code></td></tr> <tr><td>attr_name</td> <td>参数名称</td> <td>不能为空</td></tr> <tr><td>attr_sel</td> <td>[only,many]</td> <td>不能为空</td></tr> <tr><td>attr_vals</td> <td>如果是 many 就需要填写值的选项，以逗号分隔</td> <td>【可选参数】</td></tr></tbody></table> <ul><li>响应数据</li></ul> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;data&quot;: {
+        &quot;attr_id&quot;: 44,
+        &quot;attr_name&quot;: &quot;测试参数&quot;,
+        &quot;cat_id&quot;: &quot;1&quot;,
+        &quot;attr_sel&quot;: &quot;many&quot;,
+        &quot;attr_write&quot;: &quot;list&quot;,
+        &quot;attr_vals&quot;: &quot;a,b,c&quot;
+    },
+    &quot;meta&quot;: {
+        &quot;msg&quot;: &quot;创建成功&quot;,
+        &quot;status&quot;: 201
+    }
+}
+</code></pre></div><h3 id="_1-7-3-删除参数"><a href="#_1-7-3-删除参数" class="header-anchor">#</a> 1.7.3. 删除参数</h3> <ul><li>请求路径： categories/:id/attributes/:attrid</li> <li>请求方法：delete</li> <li>请求参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>:id</td> <td>分类 ID</td> <td>不能为空<code>携带在url中</code></td></tr> <tr><td>:attrid</td> <td>参数 ID</td> <td>不能为空<code>携带在url中</code></td></tr></tbody></table> <ul><li>响应数据</li></ul> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;data&quot;: null,
+    &quot;meta&quot;: {
+        &quot;msg&quot;: &quot;删除成功&quot;,
+        &quot;status&quot;: 200
+    }
+}
+</code></pre></div><h3 id="_1-7-4-根据-id-查询参数"><a href="#_1-7-4-根据-id-查询参数" class="header-anchor">#</a> 1.7.4. 根据 ID 查询参数</h3> <ul><li>请求路径：categories/:id/attributes/:attrId</li> <li>请求方法：get</li> <li>请求参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>:id</td> <td>分类 ID</td> <td>不能为空<code>携带在url中</code></td></tr> <tr><td>:attrId</td> <td>属性 ID</td> <td>不能为空<code>携带在url中</code></td></tr> <tr><td>attr_sel</td> <td>[only,many]</td> <td>不能为空</td></tr> <tr><td>attr_vals</td> <td>如果是 many 就需要填写值的选项，以逗号分隔</td> <td></td></tr></tbody></table> <ul><li>响应数据</li></ul> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;data&quot;: {
+        &quot;attr_id&quot;: 1,
+        &quot;attr_name&quot;: &quot;cpu&quot;,
+        &quot;cat_id&quot;: 22,
+        &quot;attr_sel&quot;: &quot;only&quot;,
+        &quot;attr_write&quot;: &quot;manual&quot;,
+        &quot;attr_vals&quot;: &quot;ffff&quot;
+    },
+    &quot;meta&quot;: {
+        &quot;msg&quot;: &quot;获取成功&quot;,
+        &quot;status&quot;: 200
+    }
+}
+</code></pre></div><h3 id="_1-7-5-编辑提交参数"><a href="#_1-7-5-编辑提交参数" class="header-anchor">#</a> 1.7.5. 编辑提交参数</h3> <ul><li>请求路径：categories/:id/attributes/:attrId</li> <li>请求方法：put</li> <li>请求参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>:id</td> <td>分类 ID</td> <td>不能为空<code>携带在url中</code></td></tr> <tr><td>:attrId</td> <td>属性 ID</td> <td>不能为空<code>携带在url中</code></td></tr> <tr><td>attr_name</td> <td>新属性的名字</td> <td>不能为空，携带在<code>请求体</code>中</td></tr> <tr><td>attr_sel</td> <td>属性的类型[many或only]</td> <td>不能为空，携带在<code>请求体</code>中</td></tr> <tr><td>attr_vals</td> <td>参数的属性值</td> <td>可选参数，携带在<code>请求体</code>中</td></tr></tbody></table> <ul><li>响应数据</li></ul> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;data&quot;: {
+        &quot;attr_id&quot;: 9,
+        &quot;attr_name&quot;: &quot;测试更新&quot;,
+        &quot;cat_id&quot;: &quot;43&quot;,
+        &quot;attr_sel&quot;: &quot;only&quot;,
+        &quot;attr_write&quot;: &quot;manual&quot;,
+        &quot;attr_vals&quot;: &quot;abc&quot;
+    },
+    &quot;meta&quot;: {
+        &quot;msg&quot;: &quot;更新成功&quot;,
+        &quot;status&quot;: 200
+    }
+}
+</code></pre></div><h2 id="_1-8-商品管理"><a href="#_1-8-商品管理" class="header-anchor">#</a> 1.8. 商品管理</h2> <h3 id="_1-8-1-商品列表数据"><a href="#_1-8-1-商品列表数据" class="header-anchor">#</a> 1.8.1. 商品列表数据</h3> <ul><li>请求路径：goods</li> <li>请求方法：get</li> <li>请求参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>query</td> <td>查询参数</td> <td>可以为空</td></tr> <tr><td>pagenum</td> <td>当前页码</td> <td>不能为空</td></tr> <tr><td>pagesize</td> <td>每页显示条数</td> <td>不能为空</td></tr></tbody></table> <ul><li>响应参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>total</td> <td>总共商品条数</td> <td></td></tr> <tr><td>pagenum</td> <td>当前商品页数</td> <td></td></tr> <tr><td>goods_id</td> <td>商品 ID</td> <td></td></tr> <tr><td>goods_name</td> <td>商品名称</td> <td></td></tr> <tr><td>goods_price</td> <td>价格</td> <td></td></tr> <tr><td>goods_number</td> <td>数量</td> <td></td></tr> <tr><td>goods_weight</td> <td>重量</td> <td>不能为空</td></tr> <tr><td>goods_state</td> <td>商品状态</td> <td>商品状态 0: 未通过 1: 审核中 2: 已审核</td></tr> <tr><td>add_time</td> <td>添加时间</td> <td></td></tr> <tr><td>upd_time</td> <td>更新时间</td> <td></td></tr> <tr><td>hot_mumber</td> <td>热销品数量</td> <td></td></tr> <tr><td>is_promote</td> <td>是否是热销品</td> <td></td></tr></tbody></table> <ul><li>响应数据</li></ul> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;data&quot;: {
+        &quot;total&quot;: 50,
+        &quot;pagenum&quot;: &quot;1&quot;,
+        &quot;goods&quot;: [
+            {
+                &quot;goods_id&quot;: 144,
+                &quot;goods_name&quot;: &quot;asfdsd&quot;,
+                &quot;goods_price&quot;: 1,
+                &quot;goods_number&quot;: 1,
+                &quot;goods_weight&quot;: 1,
+                &quot;goods_state&quot;: null,
+                &quot;add_time&quot;: 1512954923,
+                &quot;upd_time&quot;: 1512954923,
+                &quot;hot_mumber&quot;: 0,
+                &quot;is_promote&quot;: false
+            }
+        ]
+    },
+    &quot;meta&quot;: {
+        &quot;msg&quot;: &quot;获取成功&quot;,
+        &quot;status&quot;: 200
+    }
+}
+</code></pre></div><h3 id="_1-8-2-添加商品"><a href="#_1-8-2-添加商品" class="header-anchor">#</a> 1.8.2. 添加商品</h3> <ul><li>请求路径：goods</li> <li>请求方法：post</li> <li>请求参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>goods_name</td> <td>商品名称</td> <td>不能为空</td></tr> <tr><td>goods_cat</td> <td>以为','分割的分类列表</td> <td>不能为空</td></tr> <tr><td>goods_price</td> <td>价格</td> <td>不能为空</td></tr> <tr><td>goods_number</td> <td>数量</td> <td>不能为空</td></tr> <tr><td>goods_weight</td> <td>重量</td> <td>不能为空</td></tr> <tr><td>goods_introduce</td> <td>介绍</td> <td>可以为空</td></tr> <tr><td>pics</td> <td>上传的图片临时路径（对象）</td> <td>可以为空</td></tr> <tr><td>attrs</td> <td>商品的参数（数组），包含 <code>动态参数</code> 和 <code>静态属性</code></td> <td>可以为空</td></tr></tbody></table> <ul><li>请求数据</li></ul> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;goods_name&quot;</span><span class="token operator">:</span><span class="token string">&quot;test_goods_name2&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;goods_cat&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1,2,3&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;goods_price&quot;</span><span class="token operator">:</span><span class="token number">20</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;goods_number&quot;</span><span class="token operator">:</span><span class="token number">30</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;goods_weight&quot;</span><span class="token operator">:</span><span class="token number">40</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;goods_introduce&quot;</span><span class="token operator">:</span><span class="token string">&quot;abc&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;pics&quot;</span><span class="token operator">:</span><span class="token punctuation">[</span>
+    <span class="token punctuation">{</span><span class="token property">&quot;pic&quot;</span><span class="token operator">:</span><span class="token string">&quot;/tmp_uploads/30f08d52c551ecb447277eae232304b8&quot;</span><span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;attrs&quot;</span><span class="token operator">:</span><span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;attr_id&quot;</span><span class="token operator">:</span><span class="token number">15</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;attr_value&quot;</span><span class="token operator">:</span><span class="token string">&quot;ddd&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;attr_id&quot;</span><span class="token operator">:</span><span class="token number">15</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;attr_value&quot;</span><span class="token operator">:</span><span class="token string">&quot;eee&quot;</span>
+    <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li>响应参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>total</td> <td>总共商品条数</td> <td></td></tr> <tr><td>pagenum</td> <td>当前商品页数</td> <td></td></tr> <tr><td>goods_id</td> <td>商品 ID</td> <td></td></tr> <tr><td>goods_cat</td> <td>以为','分割的分类列表</td> <td></td></tr> <tr><td>goods_name</td> <td>商品名称</td> <td></td></tr> <tr><td>goods_price</td> <td>价格</td> <td></td></tr> <tr><td>goods_number</td> <td>数量</td> <td></td></tr> <tr><td>goods_weight</td> <td>重量</td> <td>不能为空</td></tr> <tr><td>goods_state</td> <td>商品状态</td> <td>商品状态 0: 未通过 1: 审核中 2: 已审核</td></tr> <tr><td>add_time</td> <td>添加时间</td> <td></td></tr> <tr><td>upd_time</td> <td>更新时间</td> <td></td></tr> <tr><td>hot_mumber</td> <td>热销品数量</td> <td></td></tr> <tr><td>is_promote</td> <td>是否是热销品</td> <td></td></tr> <tr><td>pics</td> <td>上传的图片临时路径（对象）</td> <td>pics_id:图片 ID,goods_id:商品 ID,pics_big:大图,pics_mid:中图,pics_sma:小图</td></tr> <tr><td>attrs</td> <td>商品的参数（数组）</td> <td>goods_id:商品 ID,attr_value:当前商品的参数值,add_price:浮动价格,attr_vals:预定义的参数值,attr_sel:手动输入，还是单选,</td></tr></tbody></table> <ul><li>响应数据</li></ul> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;goods_id&quot;</span><span class="token operator">:</span> <span class="token number">145</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;goods_name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;test_goods_name2&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;goods_price&quot;</span><span class="token operator">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cat_id&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;goods_number&quot;</span><span class="token operator">:</span> <span class="token number">30</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;goods_weight&quot;</span><span class="token operator">:</span> <span class="token number">40</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;goods_introduce&quot;</span><span class="token operator">:</span> <span class="token string">&quot;abc&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;goods_big_logo&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;goods_small_logo&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;goods_state&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;add_time&quot;</span><span class="token operator">:</span> <span class="token number">1512962370</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;upd_time&quot;</span><span class="token operator">:</span> <span class="token number">1512962370</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;hot_mumber&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;is_promote&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;pics&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+                <span class="token property">&quot;pics_id&quot;</span><span class="token operator">:</span> <span class="token number">397</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;goods_id&quot;</span><span class="token operator">:</span> <span class="token number">145</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;pics_big&quot;</span><span class="token operator">:</span> <span class="token string">&quot;uploads/goodspics/big_30f08d52c551ecb447277eae232304b8&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;pics_mid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;uploads/goodspics/mid_30f08d52c551ecb447277eae232304b8&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;pics_sma&quot;</span><span class="token operator">:</span> <span class="token string">&quot;uploads/goodspics/sma_30f08d52c551ecb447277eae232304b8&quot;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;attrs&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+                <span class="token property">&quot;goods_id&quot;</span><span class="token operator">:</span> <span class="token number">145</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;attr_id&quot;</span><span class="token operator">:</span> <span class="token number">15</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;attr_value&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ddd&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;add_price&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;attr_name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;fffffff&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;attr_sel&quot;</span><span class="token operator">:</span> <span class="token string">&quot;many&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;attr_write&quot;</span><span class="token operator">:</span> <span class="token string">&quot;list&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;attr_vals&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                <span class="token property">&quot;goods_id&quot;</span><span class="token operator">:</span> <span class="token number">145</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;attr_id&quot;</span><span class="token operator">:</span> <span class="token number">15</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;attr_value&quot;</span><span class="token operator">:</span> <span class="token string">&quot;eee&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;add_price&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;attr_name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;fffffff&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;attr_sel&quot;</span><span class="token operator">:</span> <span class="token string">&quot;many&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;attr_write&quot;</span><span class="token operator">:</span> <span class="token string">&quot;list&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;attr_vals&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;meta&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;创建商品成功&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;status&quot;</span><span class="token operator">:</span> <span class="token number">201</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_1-8-3-根据-id-查询商品"><a href="#_1-8-3-根据-id-查询商品" class="header-anchor">#</a> 1.8.3. 根据 ID 查询商品</h3> <ul><li>请求路径：goods/:id</li> <li>请求方法：get</li> <li>请求参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>id</td> <td>商品 ID</td> <td>不能为空<code>携带在url中</code></td></tr></tbody></table> <ul><li>响应参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>total</td> <td>总共商品条数</td> <td></td></tr> <tr><td>pagenum</td> <td>当前商品页数</td> <td></td></tr> <tr><td>goods_id</td> <td>商品 ID</td> <td></td></tr> <tr><td>goods_name</td> <td>商品名称</td> <td></td></tr> <tr><td>goods_price</td> <td>价格</td> <td></td></tr> <tr><td>goods_number</td> <td>数量</td> <td></td></tr> <tr><td>goods_weight</td> <td>重量</td> <td>不能为空</td></tr> <tr><td>goods_state</td> <td>商品状态</td> <td>商品状态 0: 未通过 1: 审核中 2: 已审核</td></tr> <tr><td>add_time</td> <td>添加时间</td> <td></td></tr> <tr><td>upd_time</td> <td>更新时间</td> <td></td></tr> <tr><td>hot_mumber</td> <td>热销品数量</td> <td></td></tr> <tr><td>is_promote</td> <td>是否是热销品</td> <td></td></tr> <tr><td>pics</td> <td>上传的图片临时路径（对象）</td> <td>pics_id:图片 ID,goods_id:商品 ID,pics_big:大图,pics_mid:中图,pics_sma:小图</td></tr> <tr><td>attrs</td> <td>商品的参数（数组）</td> <td>goods_id:商品 ID,attr_value:当前商品的参数值,add_price:浮动价格,attr_vals:预定义的参数值,attr_sel:手动输入，还是单选,</td></tr></tbody></table> <ul><li>响应数据</li></ul> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;data&quot;: {
+        &quot;goods_id&quot;: 145,
+        &quot;goods_name&quot;: &quot;test_goods_name2&quot;,
+        &quot;goods_price&quot;: 20,
+        &quot;goods_number&quot;: 30,
+        &quot;goods_weight&quot;: 40,
+        &quot;goods_introduce&quot;: &quot;abc&quot;,
+        &quot;goods_big_logo&quot;: &quot;&quot;,
+        &quot;goods_small_logo&quot;: &quot;&quot;,
+        &quot;goods_state&quot;: 1,
+        &quot;add_time&quot;: 1512962370,
+        &quot;upd_time&quot;: 1512962370,
+        &quot;hot_mumber&quot;: 0,
+        &quot;is_promote&quot;: false,
+        &quot;pics&quot;: [
+            {
+                &quot;pics_id&quot;: 397,
+                &quot;goods_id&quot;: 145,
+                &quot;pics_big&quot;: &quot;uploads/goodspics/big_30f08d52c551ecb447277eae232304b8&quot;,
+                &quot;pics_mid&quot;: &quot;uploads/goodspics/mid_30f08d52c551ecb447277eae232304b8&quot;,
+                &quot;pics_sma&quot;: &quot;uploads/goodspics/sma_30f08d52c551ecb447277eae232304b8&quot;
+            }
+        ],
+        &quot;attrs&quot;: [
+            {
+                &quot;goods_id&quot;: 145,
+                &quot;attr_id&quot;: 15,
+                &quot;attr_value&quot;: &quot;ddd&quot;,
+                &quot;add_price&quot;: null,
+                &quot;attr_name&quot;: &quot;fffffff&quot;,
+                &quot;attr_sel&quot;: &quot;many&quot;,
+                &quot;attr_write&quot;: &quot;list&quot;,
+                &quot;attr_vals&quot;: &quot;&quot;
+            },
+            {
+                &quot;goods_id&quot;: 145,
+                &quot;attr_id&quot;: 15,
+                &quot;attr_value&quot;: &quot;eee&quot;,
+                &quot;add_price&quot;: null,
+                &quot;attr_name&quot;: &quot;fffffff&quot;,
+                &quot;attr_sel&quot;: &quot;many&quot;,
+                &quot;attr_write&quot;: &quot;list&quot;,
+                &quot;attr_vals&quot;: &quot;&quot;
+            }
+        ]
+    },
+    &quot;meta&quot;: {
+        &quot;msg&quot;: &quot;创建商品成功&quot;,
+        &quot;status&quot;: 201
+    }
+}
+</code></pre></div><h3 id="_1-8-4-编辑提交商品-只做效果-不提交接口"><a href="#_1-8-4-编辑提交商品-只做效果-不提交接口" class="header-anchor">#</a> 1.8.4. 编辑提交商品(只做效果,不提交接口)</h3> <ul><li>请求路径：goods/:id</li> <li>请求方法：put</li> <li>请求参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>id</td> <td>商品 ID</td> <td>不能为空<code>携带在url中</code></td></tr> <tr><td>goods_name</td> <td>商品名称</td> <td>不能为空</td></tr> <tr><td>goods_price</td> <td>价格</td> <td>不能为空</td></tr> <tr><td>goods_number</td> <td>数量</td> <td>不能为空</td></tr> <tr><td>goods_weight</td> <td>重量</td> <td>不能为空</td></tr> <tr><td>goods_introduce</td> <td>介绍</td> <td>可以为空</td></tr> <tr><td>pics</td> <td>上传的图片临时路径（对象）</td> <td>可以为空</td></tr> <tr><td>attrs</td> <td>商品的参数（数组）</td> <td>可以为空</td></tr></tbody></table> <ul><li>请求数据</li></ul> <div class="language- extra-class"><pre class="language-text"><code>{
+  &quot;goods_name&quot;:&quot;test_goods_name2&quot;,
+  &quot;goods_price&quot;:20,
+  &quot;goods_number&quot;:30,
+  &quot;goods_weight&quot;:40,
+  &quot;goods_introduce&quot;:&quot;abc&quot;,
+  &quot;pics&quot;:[
+    {&quot;pic&quot;:&quot;/tmp_uploads/30f08d52c551ecb447277eae232304b8&quot;}
+    ],
+  &quot;attrs&quot;:[
+    {
+      &quot;attr_id&quot;:15,
+      &quot;attr_value&quot;:&quot;ddd&quot;
+    },
+    {
+      &quot;attr_id&quot;:15,
+      &quot;attr_value&quot;:&quot;eee&quot;
+    }
+    ]
+}
+</code></pre></div><ul><li>响应参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>total</td> <td>总共商品条数</td> <td></td></tr> <tr><td>pagenum</td> <td>当前商品页数</td> <td></td></tr> <tr><td>goods_id</td> <td>商品 ID</td> <td></td></tr> <tr><td>goods_name</td> <td>商品名称</td> <td></td></tr> <tr><td>goods_price</td> <td>价格</td> <td></td></tr> <tr><td>goods_number</td> <td>数量</td> <td></td></tr> <tr><td>goods_weight</td> <td>重量</td> <td>不能为空</td></tr> <tr><td>goods_state</td> <td>商品状态</td> <td>商品状态 0: 未通过 1: 审核中 2: 已审核</td></tr> <tr><td>add_time</td> <td>添加时间</td> <td></td></tr> <tr><td>upd_time</td> <td>更新时间</td> <td></td></tr> <tr><td>hot_mumber</td> <td>热销品数量</td> <td></td></tr> <tr><td>is_promote</td> <td>是否是热销品</td> <td></td></tr> <tr><td>pics</td> <td>上传的图片临时路径（对象）</td> <td>pics_id:图片 ID,goods_id:商品 ID,pics_big:大图,pics_mid:中图,pics_sma:小图</td></tr> <tr><td>attrs</td> <td>商品的参数（数组）</td> <td>goods_id:商品 ID,attr_value:当前商品的参数值,add_price:浮动价格,attr_vals:预定义的参数值,attr_sel:手动输入，还是单选,</td></tr></tbody></table> <ul><li>响应数据</li></ul> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;data&quot;: {
+        &quot;goods_id&quot;: 145,
+        &quot;goods_name&quot;: &quot;test_goods_name2&quot;,
+        &quot;goods_price&quot;: 20,
+        &quot;goods_number&quot;: 30,
+        &quot;goods_weight&quot;: 40,
+        &quot;goods_introduce&quot;: &quot;abc&quot;,
+        &quot;goods_big_logo&quot;: &quot;&quot;,
+        &quot;goods_small_logo&quot;: &quot;&quot;,
+        &quot;goods_state&quot;: 1,
+        &quot;add_time&quot;: 1512962370,
+        &quot;upd_time&quot;: 1512962370,
+        &quot;hot_mumber&quot;: 0,
+        &quot;is_promote&quot;: false,
+        &quot;pics&quot;: [
+            {
+                &quot;pics_id&quot;: 397,
+                &quot;goods_id&quot;: 145,
+                &quot;pics_big&quot;: &quot;uploads/goodspics/big_30f08d52c551ecb447277eae232304b8&quot;,
+                &quot;pics_mid&quot;: &quot;uploads/goodspics/mid_30f08d52c551ecb447277eae232304b8&quot;,
+                &quot;pics_sma&quot;: &quot;uploads/goodspics/sma_30f08d52c551ecb447277eae232304b8&quot;
+            }
+        ],
+        &quot;attrs&quot;: [
+            {
+                &quot;goods_id&quot;: 145,
+                &quot;attr_id&quot;: 15,
+                &quot;attr_value&quot;: &quot;ddd&quot;,
+                &quot;add_price&quot;: null,
+                &quot;attr_name&quot;: &quot;fffffff&quot;,
+                &quot;attr_sel&quot;: &quot;many&quot;,
+                &quot;attr_write&quot;: &quot;list&quot;,
+                &quot;attr_vals&quot;: &quot;&quot;
+            },
+            {
+                &quot;goods_id&quot;: 145,
+                &quot;attr_id&quot;: 15,
+                &quot;attr_value&quot;: &quot;eee&quot;,
+                &quot;add_price&quot;: null,
+                &quot;attr_name&quot;: &quot;fffffff&quot;,
+                &quot;attr_sel&quot;: &quot;many&quot;,
+                &quot;attr_write&quot;: &quot;list&quot;,
+                &quot;attr_vals&quot;: &quot;&quot;
+            }
+        ]
+    },
+    &quot;meta&quot;: {
+        &quot;msg&quot;: &quot;创建商品成功&quot;,
+        &quot;status&quot;: 201
+    }
+}
+</code></pre></div><h3 id="_1-8-5-删除商品"><a href="#_1-8-5-删除商品" class="header-anchor">#</a> 1.8.5. 删除商品</h3> <ul><li>请求路径：goods/:id</li> <li>请求方法：delete</li> <li>请求参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>id</td> <td>商品 ID</td> <td>不能为空<code>携带在url中</code></td></tr></tbody></table> <ul><li>响应数据</li></ul> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;data&quot;: null,
+    &quot;meta&quot;: {
+        &quot;msg&quot;: &quot;删除成功&quot;,
+        &quot;status&quot;: 200
+    }
+}
+</code></pre></div><p>###同步商品图片</p> <ul><li>请求路径：goods/:id/pics</li> <li>请求方法：put</li> <li>请求参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>id</td> <td>商品 ID</td> <td>不能为空<code>携带在url中</code></td></tr> <tr><td>pics</td> <td>商品图片集合</td> <td>如果有 pics_id 字段会保留该图片，如果没有 pics_id 但是有 pic 字段就会新生成图片数据</td></tr></tbody></table> <ul><li>请求数据</li></ul> <div class="language- extra-class"><pre class="language-text"><code>;[
+  { pic: 'tmp_uploads/db28f6316835836e97653b5c75e418be.png' },
+  {
+    pics_id: 397,
+    goods_id: 145,
+    pics_big: 'uploads/goodspics/big_30f08d52c551ecb447277eae232304b8',
+    pics_mid: 'uploads/goodspics/mid_30f08d52c551ecb447277eae232304b8',
+    pics_sma: 'uploads/goodspics/sma_30f08d52c551ecb447277eae232304b8'
+  }
+]
+</code></pre></div><ul><li>响应数据</li></ul> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;data&quot;: {
+        &quot;goods_id&quot;: 96,
+        &quot;goods_name&quot;: &quot;iphoneXX&quot;,
+        &quot;goods_price&quot;: 2,
+        &quot;goods_number&quot;: 22,
+        &quot;goods_weight&quot;: 22,
+        &quot;goods_introduce&quot;: null,
+        &quot;goods_big_logo&quot;: &quot;./uploads/goods/20171113/483a3b8e99e534ec3e4312dbbaee7c9d.jpg&quot;,
+        &quot;goods_small_logo&quot;: &quot;./uploads/goods/20171113/small_483a3b8e99e534ec3e4312dbbaee7c9d.jpg&quot;,
+        &quot;goods_state&quot;: 0,
+        &quot;is_del&quot;: &quot;1&quot;,
+        &quot;add_time&quot;: 1510045904,
+        &quot;upd_time&quot;: 1512635159,
+        &quot;delete_time&quot;: 1512635159,
+        &quot;hot_mumber&quot;: 0,
+        &quot;is_promote&quot;: false,
+        &quot;pics&quot;: [
+            {
+                &quot;pics_id&quot;: 383,
+                &quot;goods_id&quot;: 96,
+                &quot;pics_big&quot;: &quot;uploads/goodspics/big_6f5750132abd3f5b2b93dd722fcde653.jpg&quot;,
+                &quot;pics_mid&quot;: &quot;uploads/goodspics/mid_6f5750132abd3f5b2b93dd722fcde653.jpg&quot;,
+                &quot;pics_sma&quot;: &quot;uploads/goodspics/sma_6f5750132abd3f5b2b93dd722fcde653.jpg&quot;
+            }
+        ],
+        &quot;attrs&quot;: [
+            {
+                &quot;goods_id&quot;: 96,
+                &quot;attr_id&quot;: 15,
+                &quot;attr_value&quot;: &quot;eee&quot;,
+                &quot;add_price&quot;: null,
+                &quot;attr_name&quot;: &quot;fffffff&quot;,
+                &quot;attr_sel&quot;: &quot;many&quot;,
+                &quot;attr_write&quot;: &quot;list&quot;,
+                &quot;attr_vals&quot;: &quot;&quot;
+            },
+            {
+                &quot;goods_id&quot;: 96,
+                &quot;attr_id&quot;: 15,
+                &quot;attr_value&quot;: &quot;ddd&quot;,
+                &quot;add_price&quot;: null,
+                &quot;attr_name&quot;: &quot;fffffff&quot;,
+                &quot;attr_sel&quot;: &quot;many&quot;,
+                &quot;attr_write&quot;: &quot;list&quot;,
+                &quot;attr_vals&quot;: &quot;&quot;
+            }
+        ]
+    },
+    &quot;meta&quot;: {
+        &quot;msg&quot;: &quot;更新成功&quot;,
+        &quot;status&quot;: 200
+    }
+}
+</code></pre></div><p>###同步商品属性</p> <ul><li>请求路径：goods/:id/attributes</li> <li>请求方法：put</li> <li>请求参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>id</td> <td>商品 ID</td> <td>不能为空<code>携带在url中</code></td></tr></tbody></table> <ul><li>请求数据</li></ul> <div class="language- extra-class"><pre class="language-text"><code>;[
+  {
+    attr_id: 15,
+    attr_value: 'ddd'
+  },
+  {
+    attr_id: 15,
+    attr_value: 'eee'
+  }
+]
+</code></pre></div><ul><li>响应数据</li></ul> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;data&quot;: {
+        &quot;goods_id&quot;: 96,
+        &quot;goods_name&quot;: &quot;iphoneXX&quot;,
+        &quot;goods_price&quot;: 2,
+        &quot;goods_number&quot;: 22,
+        &quot;goods_weight&quot;: 22,
+        &quot;goods_introduce&quot;: null,
+        &quot;goods_big_logo&quot;: &quot;./uploads/goods/20171113/483a3b8e99e534ec3e4312dbbaee7c9d.jpg&quot;,
+        &quot;goods_small_logo&quot;: &quot;./uploads/goods/20171113/small_483a3b8e99e534ec3e4312dbbaee7c9d.jpg&quot;,
+        &quot;goods_state&quot;: 0,
+        &quot;is_del&quot;: &quot;1&quot;,
+        &quot;add_time&quot;: 1510045904,
+        &quot;upd_time&quot;: 1512635159,
+        &quot;delete_time&quot;: 1512635159,
+        &quot;hot_mumber&quot;: 0,
+        &quot;is_promote&quot;: false,
+        &quot;pics&quot;: [
+            {
+                &quot;pics_id&quot;: 383,
+                &quot;goods_id&quot;: 96,
+                &quot;pics_big&quot;: &quot;uploads/goodspics/big_6f5750132abd3f5b2b93dd722fcde653.jpg&quot;,
+                &quot;pics_mid&quot;: &quot;uploads/goodspics/mid_6f5750132abd3f5b2b93dd722fcde653.jpg&quot;,
+                &quot;pics_sma&quot;: &quot;uploads/goodspics/sma_6f5750132abd3f5b2b93dd722fcde653.jpg&quot;
+            }
+        ],
+        &quot;attrs&quot;: [
+            {
+                &quot;goods_id&quot;: 96,
+                &quot;attr_id&quot;: 15,
+                &quot;attr_value&quot;: &quot;eee&quot;,
+                &quot;add_price&quot;: null,
+                &quot;attr_name&quot;: &quot;fffffff&quot;,
+                &quot;attr_sel&quot;: &quot;many&quot;,
+                &quot;attr_write&quot;: &quot;list&quot;,
+                &quot;attr_vals&quot;: &quot;&quot;
+            },
+            {
+                &quot;goods_id&quot;: 96,
+                &quot;attr_id&quot;: 15,
+                &quot;attr_value&quot;: &quot;ddd&quot;,
+                &quot;add_price&quot;: null,
+                &quot;attr_name&quot;: &quot;fffffff&quot;,
+                &quot;attr_sel&quot;: &quot;many&quot;,
+                &quot;attr_write&quot;: &quot;list&quot;,
+                &quot;attr_vals&quot;: &quot;&quot;
+            }
+        ]
+    },
+    &quot;meta&quot;: {
+        &quot;msg&quot;: &quot;更新成功&quot;,
+        &quot;status&quot;: 200
+    }
+}
+</code></pre></div><p>###商品图片处理必须安装 GraphicsMagick</p> <ul><li>linux</li></ul> <div class="language- extra-class"><pre class="language-text"><code>apt-get install GraphicsMagick
+</code></pre></div><ul><li>Mac OS X</li></ul> <div class="language- extra-class"><pre class="language-text"><code>brew install GraphicsMagick
+</code></pre></div><ul><li>Windows <a href="https://sourceforge.net/projects/graphicsmagick/files/graphicsmagick-binaries/1.3.27/GraphicsMagick-1.3.27-Q8-win64-dll.exe/download" target="_blank" rel="noopener noreferrer">点击下载<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul> <h2 id="_1-9-图片上传"><a href="#_1-9-图片上传" class="header-anchor">#</a> 1.9. 图片上传</h2> <ul><li>请求路径：upload</li> <li>请求方法：post</li> <li>请求参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>file</td> <td>上传文件</td> <td></td></tr></tbody></table> <ul><li>响应数据</li></ul> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;data&quot;: {
+        &quot;tmp_path&quot;: &quot;tmp_uploads/ccfc5179a914e94506bcbb7377e8985f.png&quot;,
+        &quot;url&quot;: &quot;http://127.0.0.1:8888tmp_uploads/ccfc5179a914e94506bcbb7377e8985f.png&quot;
+    },
+    &quot;meta&quot;: {
+        &quot;msg&quot;: &quot;上传成功&quot;,
+        &quot;status&quot;: 200
+    }
+}
+</code></pre></div><h2 id="_1-10-订单管理"><a href="#_1-10-订单管理" class="header-anchor">#</a> 1.10. 订单管理</h2> <h3 id="_1-10-1-订单数据列表"><a href="#_1-10-1-订单数据列表" class="header-anchor">#</a> 1.10.1. 订单数据列表</h3> <ul><li>请求路径：orders</li> <li>请求方法：get</li> <li>请求参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>query</td> <td>查询参数</td> <td>可以为空</td></tr> <tr><td>pagenum</td> <td>当前页码</td> <td>不能为空</td></tr> <tr><td>pagesize</td> <td>每页显示条数</td> <td>不能为空</td></tr> <tr><td>user_id</td> <td>用户 ID</td> <td>可以为空</td></tr> <tr><td>pay_status</td> <td>支付状态</td> <td>可以为空</td></tr> <tr><td>is_send</td> <td>是否发货</td> <td>可以为空</td></tr> <tr><td>order_fapiao_title</td> <td>['个人','公司']</td> <td>可以为空</td></tr> <tr><td>order_fapiao_company</td> <td>公司名称</td> <td>可以为空</td></tr> <tr><td>order_fapiao_content</td> <td>发票内容</td> <td>可以为空</td></tr> <tr><td>consignee_addr</td> <td>发货地址</td> <td>可以为空</td></tr></tbody></table> <ul><li>响应数据</li></ul> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;data&quot;: {
+        &quot;total&quot;: 1,
+        &quot;pagenum&quot;: &quot;1&quot;,
+        &quot;goods&quot;: [
+            {
+                &quot;order_id&quot;: 47,
+                &quot;user_id&quot;: 133,
+                &quot;order_number&quot;: &quot;itcast-59e7502d7993d&quot;,
+                &quot;order_price&quot;: 322,
+                &quot;order_pay&quot;: &quot;1&quot;,
+                &quot;is_send&quot;: &quot;是&quot;,
+                &quot;trade_no&quot;: &quot;&quot;,
+                &quot;order_fapiao_title&quot;: &quot;个人&quot;,
+                &quot;order_fapiao_company&quot;: &quot;&quot;,
+                &quot;order_fapiao_content&quot;: &quot;办公用品&quot;,
+                &quot;consignee_addr&quot;: &quot;a:7:{s:6:\&quot;cgn_id\&quot;;i:1;s:7:\&quot;user_id\&quot;;i:133;s:8:\&quot;cgn_name\&quot;;s:9:\&quot;王二柱\&quot;;s:11:\&quot;cgn_address\&quot;;s:51:\&quot;北京市海淀区苏州街长远天地大厦305室\&quot;;s:7:\&quot;cgn_tel\&quot;;s:11:\&quot;13566771298\&quot;;s:8:\&quot;cgn_code\&quot;;s:6:\&quot;306810\&quot;;s:11:\&quot;delete_time\&quot;;N;}&quot;,
+                &quot;pay_status&quot;: &quot;1&quot;,
+                &quot;create_time&quot;: 1508331565,
+                &quot;update_time&quot;: 1508331565
+            }
+        ]
+    },
+    &quot;meta&quot;: {
+        &quot;msg&quot;: &quot;获取成功&quot;,
+        &quot;status&quot;: 200
+    }
+}
+</code></pre></div><h3 id="_1-10-2-修改订单状态"><a href="#_1-10-2-修改订单状态" class="header-anchor">#</a> 1.10.2. 修改订单状态</h3> <ul><li>请求路径：orders/:id</li> <li>请求方法：put</li> <li>请求参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>id</td> <td>订单 ID</td> <td>不能为空<code>携带在url中</code></td></tr> <tr><td>is_send</td> <td>订单是否发货</td> <td>1:已经发货，0:未发货</td></tr> <tr><td>order_pay</td> <td>订单支付</td> <td>支付方式 0 未支付 1 支付宝 2 微信 3 银行卡</td></tr> <tr><td>order_price</td> <td>订单价格</td> <td></td></tr> <tr><td>order_number</td> <td>订单数量</td> <td></td></tr> <tr><td>pay_status</td> <td>支付状态</td> <td>订单状态： 0 未付款、1 已付款</td></tr></tbody></table> <ul><li>请求数据说明
+<ul><li>所有请求数据都是增量更新，如果参数不填写，就不会更新该字段</li></ul></li> <li>响应数据</li></ul> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;data&quot;: {
+        &quot;order_id&quot;: 67,
+        &quot;user_id&quot;: 1,
+        &quot;order_number&quot;: &quot;itcast-g7kmck71vjaujfgoi&quot;,
+        &quot;order_price&quot;: 20,
+        &quot;order_pay&quot;: &quot;0&quot;,
+        &quot;is_send&quot;: &quot;否&quot;,
+        &quot;trade_no&quot;: &quot;&quot;,
+        &quot;order_fapiao_title&quot;: &quot;个人&quot;,
+        &quot;order_fapiao_company&quot;: &quot;&quot;,
+        &quot;order_fapiao_content&quot;: &quot;&quot;,
+        &quot;consignee_addr&quot;: &quot;&quot;,
+        &quot;pay_status&quot;: &quot;0&quot;,
+        &quot;create_time&quot;: 1512533560,
+        &quot;update_time&quot;: 1512533560,
+        &quot;goods&quot;: [
+            {
+                &quot;id&quot;: 82,
+                &quot;order_id&quot;: 67,
+                &quot;goods_id&quot;: 96,
+                &quot;goods_price&quot;: 333,
+                &quot;goods_number&quot;: 2,
+                &quot;goods_total_price&quot;: 999
+            },
+            {
+                &quot;id&quot;: 83,
+                &quot;order_id&quot;: 67,
+                &quot;goods_id&quot;: 95,
+                &quot;goods_price&quot;: 666,
+                &quot;goods_number&quot;: 5,
+                &quot;goods_total_price&quot;: 999
+            }
+        ]
+    },
+    &quot;meta&quot;: {
+        &quot;msg&quot;: &quot;获取成功&quot;,
+        &quot;status&quot;: 200
+    }
+}
+</code></pre></div><h3 id="_1-10-3-查看订单详情"><a href="#_1-10-3-查看订单详情" class="header-anchor">#</a> 1.10.3. 查看订单详情</h3> <ul><li>请求路径：orders/:id</li> <li>请求方法：get</li> <li>请求参数</li></ul> <table><thead><tr><th>参数名</th> <th>参数说明</th> <th>备注</th></tr></thead> <tbody><tr><td>id</td> <td>订单 ID</td> <td>不能为空<code>携带在url中</code></td></tr></tbody></table> <ul><li>响应数据</li></ul> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;data&quot;: {
+        &quot;order_id&quot;: 67,
+        &quot;user_id&quot;: 1,
+        &quot;order_number&quot;: &quot;itcast-g7kmck71vjaujfgoi&quot;,
+        &quot;order_price&quot;: 20,
+        &quot;order_pay&quot;: &quot;0&quot;,
+        &quot;is_send&quot;: &quot;否&quot;,
+        &quot;trade_no&quot;: &quot;&quot;,
+        &quot;order_fapiao_title&quot;: &quot;个人&quot;,
+        &quot;order_fapiao_company&quot;: &quot;&quot;,
+        &quot;order_fapiao_content&quot;: &quot;&quot;,
+        &quot;consignee_addr&quot;: &quot;&quot;,
+        &quot;pay_status&quot;: &quot;0&quot;,
+        &quot;create_time&quot;: 1512533560,
+        &quot;update_time&quot;: 1512533560,
+        &quot;goods&quot;: [
+            {
+                &quot;id&quot;: 82,
+                &quot;order_id&quot;: 67,
+                &quot;goods_id&quot;: 96,
+                &quot;goods_price&quot;: 333,
+                &quot;goods_number&quot;: 2,
+                &quot;goods_total_price&quot;: 999
+            },
+            {
+                &quot;id&quot;: 83,
+                &quot;order_id&quot;: 67,
+                &quot;goods_id&quot;: 95,
+                &quot;goods_price&quot;: 666,
+                &quot;goods_number&quot;: 5,
+                &quot;goods_total_price&quot;: 999
+            }
+        ]
+    },
+    &quot;meta&quot;: {
+        &quot;msg&quot;: &quot;获取成功&quot;,
+        &quot;status&quot;: 200
+    }
+}
+</code></pre></div><h3 id="_1-10-4-修改地址"><a href="#_1-10-4-修改地址" class="header-anchor">#</a> 1.10.4. 修改地址</h3> <ol><li><a href="https://github.com/iceyangcc/provinces-china" target="_blank" rel="noopener noreferrer">省市区/县联动效果 - 结合ElementUI的 el-cascader 组件<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ol> <h3 id="_1-10-5-查看物流信息"><a href="#_1-10-5-查看物流信息" class="header-anchor">#</a> 1.10.5. 查看物流信息</h3> <ul><li><p>请求路径：/kuaidi/:id</p></li> <li><p>请求方法：get</p></li> <li><p>供测试的物流单号：1106975712662 或者 804909574412544600</p></li> <li><p>响应数据：</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;time&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2018-05-10 09:39:00&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;ftime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2018-05-10 09:39:00&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;context&quot;</span><span class="token operator">:</span> <span class="token string">&quot;已签收,感谢使用顺丰,期待再次为您服务&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;location&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;time&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2018-05-10 08:23:00&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;ftime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2018-05-10 08:23:00&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;context&quot;</span><span class="token operator">:</span> <span class="token string">&quot;[北京市]北京海淀育新小区营业点派件员 顺丰速运 95338正在为您派件&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;location&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;time&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2018-05-10 07:32:00&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;ftime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2018-05-10 07:32:00&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;context&quot;</span><span class="token operator">:</span> <span class="token string">&quot;快件到达 [北京海淀育新小区营业点]&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;location&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;time&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2018-05-10 02:03:00&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;ftime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2018-05-10 02:03:00&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;context&quot;</span><span class="token operator">:</span> <span class="token string">&quot;快件在[北京顺义集散中心]已装车,准备发往 [北京海淀育新小区营业点]&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;location&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;time&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2018-05-09 23:05:00&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;ftime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2018-05-09 23:05:00&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;context&quot;</span><span class="token operator">:</span> <span class="token string">&quot;快件到达 [北京顺义集散中心]&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;location&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;time&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2018-05-09 21:21:00&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;ftime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2018-05-09 21:21:00&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;context&quot;</span><span class="token operator">:</span> <span class="token string">&quot;快件在[北京宝胜营业点]已装车,准备发往 [北京顺义集散中心]&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;location&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;time&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2018-05-09 13:07:00&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;ftime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2018-05-09 13:07:00&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;context&quot;</span><span class="token operator">:</span> <span class="token string">&quot;顺丰速运 已收取快件&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;location&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;time&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2018-05-09 12:25:03&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;ftime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2018-05-09 12:25:03&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;context&quot;</span><span class="token operator">:</span> <span class="token string">&quot;卖家发货&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;location&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;time&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2018-05-09 12:22:24&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;ftime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2018-05-09 12:22:24&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;context&quot;</span><span class="token operator">:</span> <span class="token string">&quot;您的订单将由HLA（北京海淀区清河中街店）门店安排发货。&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;location&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;time&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2018-05-08 21:36:04&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;ftime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2018-05-08 21:36:04&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;context&quot;</span><span class="token operator">:</span> <span class="token string">&quot;商品已经下单&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;location&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;meta&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">&quot;status&quot;</span><span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span> <span class="token property">&quot;message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;获取物流信息成功！&quot;</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div></li></ul> <h2 id="_1-11-数据统计"><a href="#_1-11-数据统计" class="header-anchor">#</a> 1.11. 数据统计</h2> <h3 id="_1-11-1-基于时间统计的折线图"><a href="#_1-11-1-基于时间统计的折线图" class="header-anchor">#</a> 1.11.1.  基于时间统计的折线图</h3> <ul><li><p>请求路径：reports/type/1</p></li> <li><p>请求方法：get</p></li> <li><p>响应数据</p></li> <li><p>需要合并的选项</p> <div class="language-js extra-class"><pre class="language-js"><code>options<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        title<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+          text<span class="token punctuation">:</span> <span class="token string">'用户来源'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        tooltip<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+          trigger<span class="token punctuation">:</span> <span class="token string">'axis'</span><span class="token punctuation">,</span>
+          axisPointer<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            type<span class="token punctuation">:</span> <span class="token string">'cross'</span><span class="token punctuation">,</span>
+            label<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+              backgroundColor<span class="token punctuation">:</span> <span class="token string">'#E9EEF3'</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        grid<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+          left<span class="token punctuation">:</span> <span class="token string">'3%'</span><span class="token punctuation">,</span>
+          right<span class="token punctuation">:</span> <span class="token string">'4%'</span><span class="token punctuation">,</span>
+          bottom<span class="token punctuation">:</span> <span class="token string">'3%'</span><span class="token punctuation">,</span>
+          containLabel<span class="token punctuation">:</span> <span class="token boolean">true</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        xAxis<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            boundaryGap<span class="token punctuation">:</span> <span class="token boolean">false</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        yAxis<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            type<span class="token punctuation">:</span> <span class="token string">'value'</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+</code></pre></div></li></ul></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/shop-admin-api/assets/js/app.7f50e92e.js" defer></script><script src="/shop-admin-api/assets/js/2.263da688.js" defer></script><script src="/shop-admin-api/assets/js/9.c3b3eea0.js" defer></script>
+  </body>
+</html>
